@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3E6E42A124B1EE1700275356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E6E429B24B1EE1700275356 /* Test2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3E6E425724B1EA6600275356;
+			remoteInfo = Test2;
+		};
+		3E6E42A324B1EE1700275356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E6E429B24B1EE1700275356 /* Test2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3E6E427224B1EA6B00275356;
+			remoteInfo = Test2Tests;
+		};
+		3E6E42A524B1EE1700275356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E6E429B24B1EE1700275356 /* Test2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3E6E427D24B1EA6B00275356;
+			remoteInfo = Test2UITests;
+		};
 		3EBE9DE3248BE12D006CF402 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3EBE9DBF248BE129006CF402 /* Project object */;
@@ -43,6 +64,7 @@
 		2ECA799DAB96DEB6C5CBF368 /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		3E09412C2490DA8F00C020F3 /* Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Bridging-Header.h"; sourceTree = "<group>"; };
 		3E09412D2490DA8F00C020F3 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		3E6E429B24B1EE1700275356 /* Test2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Test2.xcodeproj; path = Test2/Test2.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3E9D9FF324A0B1F000C16FBD /* LKEventDatePickeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKEventDatePickeView.swift; sourceTree = "<group>"; };
 		3EBE9DC7248BE129006CF402 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBE9DCA248BE129006CF402 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +116,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E6E429C24B1EE1700275356 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E6E42A224B1EE1700275356 /* Test2.app */,
+				3E6E42A424B1EE1700275356 /* Test2Tests.xctest */,
+				3E6E42A624B1EE1700275356 /* Test2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3EBE9DBE248BE129006CF402 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +151,7 @@
 		3EBE9DC9248BE129006CF402 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				3E6E429B24B1EE1700275356 /* Test2.xcodeproj */,
 				3EBE9DCA248BE129006CF402 /* AppDelegate.h */,
 				3EBE9DCB248BE129006CF402 /* AppDelegate.m */,
 				3EBE9DCD248BE129006CF402 /* SceneDelegate.h */,
@@ -171,7 +204,6 @@
 				2ECA799DAB96DEB6C5CBF368 /* Pods-Test.debug.xcconfig */,
 				D2B980CA9B151AD249A0F0C9 /* Pods-Test.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -267,6 +299,12 @@
 			mainGroup = 3EBE9DBE248BE129006CF402;
 			productRefGroup = 3EBE9DC8248BE129006CF402 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3E6E429C24B1EE1700275356 /* Products */;
+					ProjectRef = 3E6E429B24B1EE1700275356 /* Test2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3EBE9DC6248BE129006CF402 /* Test */,
@@ -275,6 +313,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3E6E42A224B1EE1700275356 /* Test2.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Test2.app;
+			remoteRef = 3E6E42A124B1EE1700275356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3E6E42A424B1EE1700275356 /* Test2Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Test2Tests.xctest;
+			remoteRef = 3E6E42A324B1EE1700275356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3E6E42A624B1EE1700275356 /* Test2UITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Test2UITests.xctest;
+			remoteRef = 3E6E42A524B1EE1700275356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3EBE9DC5248BE129006CF402 /* Resources */ = {
